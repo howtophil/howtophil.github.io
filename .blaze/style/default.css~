@@ -41,9 +41,8 @@ body {
 
 #heading {
   width: 900px;
-  padding: 20px;
+  padding: 0px;
   background-color: #2e2e2e;
-  background-image: url("http://howtophil.github.io/images/htpbanner.png");
   border-bottom: 2px solid #2a2a2a;
   border-top: 2px solid #323232;
   color: #d0d0d0;
@@ -98,7 +97,7 @@ body {
   float: left;
   margin: 0px;
   padding: 10px 10px 20px 20px;
-  width: 528px;
+  width: 660px;
   text-align: justify;
 }
 

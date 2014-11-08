@@ -16,8 +16,8 @@
 <div id="wrapper">
   <div id="shadow">
     <div id="heading">
-      <h1><a href="%home%" rel="index"><!-- title --></a></h1>
-      <!-- subtitle -->
+      <h1><a href="%home%" rel="index"><img src="http://howtophil.github.io/images/htpbanner.png"></a></h1>
+      <a href="%home%" rel="index"><!-- title --> . <!-- subtitle --></a>
     </div>
 
     <div id="menu">
