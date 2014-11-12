@@ -1,13 +1,13 @@
 <html>
 <head>
 <script type="text/javascript">
-	str1 = "http://howtophil.tumblr.com/";
+	str1 = "http://howtophil.tumblr.com";
 	str2 = location.pathname
 	newurl = str1.concat(str2);
-	document.write(newurl);
+	window.location=newurl;
 </script>
 </head>
 <body>
-	window.location=str1;
+
 </body>
 </html>
