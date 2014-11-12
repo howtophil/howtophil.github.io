@@ -2,7 +2,8 @@
 <head>
 <script type="text/javascript">
 	str1 = "http://howtophil.tumblr.com/";
-	str1.concat(location.pathname);
+	str2 = location.pathname
+	str1.concat(str2);
 	document.write(str1);
 </script>
 </head>
