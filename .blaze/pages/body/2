@@ -66,3 +66,8 @@ this is only a guide and you should feel free to deviate from the line!
 <tr><td>11. Resurrection (8.33%)</td><td><input type="number" readonly id="hero11"></td><td><input type="number" readonly id="tot11"></td></tr>
 <tr><td>12. Return With The Elixir (8.33%)</td><td><input type="number" readonly id="hero12"></td><td><input type="number" readonly id="tot12"></td></tr>
 </table>
+
+
+<p>
+<a href="http://www.thewritersjourney.com/hero%27s_journey.htm">You can find a great guide explaining the steps of The Hero's Journey here.</a>
+</p>
