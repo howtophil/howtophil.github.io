@@ -1,0 +1,81 @@
+# This and the following lines beginning with '#' are the page header. Ple-
+# ase take your time and replace these  options with  desired  values. Just
+# remember that the date has to be in the YYYY-MM-DD form, and the  url, if
+# provided, should  consist of alphanumeric characters,  hyphens and under-
+# scores only. Specifying your own url  is especially  recommended  in case
+# you use non-ASCII characters in your page title.
+#
+#   title:    3 Act Structure & 12 Step Hero's Journey Word Count Calculator
+#   date:     2014-11-22
+#   keywords: 3 act structure, writing, hero's journey, joseph campbell, word count, calculator, writing guide
+#   url:      
+#
+# The header ends here. The rest is the content of your page.
+
+<script type="text/javascript">
+function dothecalc() {
+	var thewordcount = document.getElementById("wordcount");
+
+	document.getElementById('act1').value=Math.round(thewordcount.value*0.25);
+		document.getElementById('hero1').value=Math.round(thewordcount.value*0.05);
+			document.getElementById('tot1').value=Number(document.getElementById('hero1').value)
+		document.getElementById('hero2').value=Math.round(thewordcount.value*0.05);
+			document.getElementById('tot2').value=Number(document.getElementById('hero2').value)+Number(document.getElementById('tot1').value)
+		document.getElementById('hero3').value=Math.round(thewordcount.value*0.05);
+			document.getElementById('tot3').value=Number(document.getElementById('hero3').value)+Number(document.getElementById('tot2').value)
+		document.getElementById('hero4').value=Math.round(thewordcount.value*0.05);
+			document.getElementById('tot4').value=Number(document.getElementById('hero4').value)+Number(document.getElementById('tot3').value)
+		document.getElementById('hero5').value=Math.round(act1.value-(Math.round(thewordcount.value*0.05)*4));
+			document.getElementById('tot5').value=Number(document.getElementById('hero5').value)+Number(document.getElementById('tot4').value)
+	document.getElementById('act2').value=Math.round(thewordcount.value*0.5);
+		document.getElementById('hero6').value=Math.round(thewordcount.value*0.125);
+			document.getElementById('tot6').value=Number(document.getElementById('hero6').value)+Number(document.getElementById('tot5').value)
+		document.getElementById('hero7').value=Math.round(thewordcount.value*0.125);
+			document.getElementById('tot7').value=Number(document.getElementById('hero7').value)+Number(document.getElementById('tot6').value)
+		document.getElementById('hero8').value=Math.round(thewordcount.value*0.125);
+			document.getElementById('tot8').value=Number(document.getElementById('hero8').value)+Number(document.getElementById('tot7').value)
+		document.getElementById('hero9').value=Math.round(act2.value-(Math.round(thewordcount.value*0.125)*3));
+			document.getElementById('tot9').value=Number(document.getElementById('hero9').value)+Number(document.getElementById('tot8').value)
+	document.getElementById('act3').value=Math.round(thewordcount.value*0.25);
+		document.getElementById('hero10').value=Math.round(thewordcount.value*0.0833333333);
+			document.getElementById('tot10').value=Number(document.getElementById('hero10').value)+Number(document.getElementById('tot9').value)
+		document.getElementById('hero11').value=Math.round(thewordcount.value*0.0833333333);
+			document.getElementById('tot11').value=Number(document.getElementById('hero11').value)+Number(document.getElementById('tot10').value)
+		document.getElementById('hero12').value=Math.round(thewordcount.value-document.getElementById('tot11').value);
+			document.getElementById('tot12').value=Number(document.getElementById('hero12').value)+Number(document.getElementById('tot11').value)
+}
+</script>
+
+<p>
+Enter your word count goal (no commas, periods, etc) for your story below and then hit the "Calculate" button.
+You'll be presented with word counts goals based on the standard Three Act Structure
+combined with the twelve step Hero's Journey. The "Section Count" column shows how many
+words (approximately) that step in the Hero's Journey should be in order to keep on 
+track towards your word count goal within the normal 25%/50%/25% structure of the standard
+Three Act Structure. You can use this table as a sort of ruler or guideline to make sure
+you are creating a cohesive story that doesn't drag on too long or that does not devote
+enough attention to areas that it should. I hope this helps with your stories. Remember though,
+this is only a guide and you should feel free to deviate from the line!
+</p>
+
+<table>
+<tr><td>Enter your Word Count Goal here:</td><td><input type="number" id="wordcount"></td><td><input type="submit" value="Calculate" onclick="dothecalc()"></td></tr>
+<tr bgcolor="yellow"><td>Act I (25%)</td><td align="center" colspan="2"><input type="number" readonly id="act1"></td></tr>
+<tr><td>&nbsp;</td><td align="center">Section Count</td><td align="center">Running Total</td></tr>
+<tr><td>1. Ordinary World (5%)</td><td><input type="number" readonly id="hero1"></td><td><input type="number" readonly id="tot1"></td></tr>
+<tr><td>2. Call To Adventure (5%)</td><td><input type="number" readonly id="hero2"></td><td><input type="number" readonly id="tot2"></td></tr>
+<tr><td>3. Refusal Of The Call (5%)</td><td><input type="number" readonly id="hero3"></td><td><input type="number" readonly id="tot3"></td></tr>
+<tr><td>4. Meeting The Mentor (5%)</td><td><input type="number" readonly id="hero4"></td><td><input type="number" readonly id="tot4"></td></tr>
+<tr><td>5. Crossing The Threshold (5%)</td><td><input type="number" readonly id="hero5"></td><td><input type="number" readonly id="tot5"></td></tr>
+<tr bgcolor="yellow"><td>Act II (50%)</td><td align="center" colspan="2"><input type="number" readonly id="act2"></td></tr>
+<tr><td>&nbsp;</td><td align="center">Section Count</td><td align="center">Running Total</td></tr>
+<tr><td>6. Tests, Allies, Enemies (12.5%)</td><td><input type="number" readonly id="hero6"></td><td><input type="number" readonly id="tot6"></td></tr>
+<tr><td>7. Approach To The Inmost Cave (12.5%)</td><td><input type="number" readonly id="hero7"></td><td><input type="number" readonly id="tot7"></td></tr>
+<tr><td>8. Supreme Ordeal (12.5%)</td><td><input type="number" readonly id="hero8"></td><td><input type="number" readonly id="tot8"></td></tr>
+<tr><td>9. Reward (12.5%)</td><td><input type="number" readonly id="hero9"></td><td><input type="number" readonly id="tot9"></td></tr>
+<tr bgcolor="yellow"><td>Act III (25%)</td><td align="center" colspan="2"><input type="number" readonly id="act3"></td></tr>
+<tr><td>&nbsp;</td><td align="center">Section Count</td><td align="center">Running Total</td></tr>
+<tr><td>10. The Road Back (8.33%)</td><td><input type="number" readonly id="hero10"></td><td><input type="number" readonly id="tot10"></td></tr>
+<tr><td>11. Resurrection (8.33%)</td><td><input type="number" readonly id="hero11"></td><td><input type="number" readonly id="tot11"></td></tr>
+<tr><td>12. Return With The Elixir (8.33%)</td><td><input type="number" readonly id="hero12"></td><td><input type="number" readonly id="tot12"></td></tr>
+</table>
