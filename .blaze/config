@@ -57,7 +57,7 @@ log=false
 doctype=html
 extension=html
 encoding=UTF-8
-editor=joe
+editor=gedit -s
 processor=
 
 ## RSS feed settings. Available options are:
