@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="txt/html; charset=UTF-8">
   <meta name="Generator" content="BlazeBlogger 1.2.0">
   <meta name="Copyright" content="&copy; 2015 HowToPhil">
-  <meta name="Date" content="Wed Jan 28 17:24:23 2015">
+  <meta name="Date" content="Sat Jan 31 19:48:04 2015">
   <meta name="Description" content="blog description">
   <meta name="Keywords" content="3 act structure, writing, hero's journey, joseph campbell, word count, calculator, writing guide, blog keywords">
   <link rel="stylesheet" href="../default.css" type="text/css">
@@ -39,34 +39,214 @@
 <script type="text/javascript">
 function dothecalc() {
 	var thewordcount = document.getElementById("wordcount");
+	var act1parts=0;
+	var act2parts=0;
+	var act3parts=0;
+
+	if (hero1c.checked == 1){act1parts=act1parts+1;}
+	if (hero2c.checked == 1){act1parts=act1parts+1;}
+	if (hero3c.checked == 1){act1parts=act1parts+1;}
+	if (hero4c.checked == 1){act1parts=act1parts+1;}
+	if (hero5c.checked == 1){act1parts=act1parts+1;}
+
+	if (hero6c.checked == 1){act2parts=act2parts+1;}
+	if (hero7c.checked == 1){act2parts=act2parts+1;}
+	if (hero8c.checked == 1){act2parts=act2parts+1;}
+	if (hero9c.checked == 1){act2parts=act2parts+1;}
+
+	if (hero10c.checked == 1){act3parts=act3parts+1;}
+	if (hero11c.checked == 1){act3parts=act3parts+1;}
+	if (hero12c.checked == 1){act3parts=act3parts+1;}
+	var act1per = 1/act1parts;
+	var act1fix = act1parts-1
+	var act2per = 1/act2parts;
+	var act2fix = act2parts-1;
+	var act3per = 1/act3parts;
+	var act3fix = act3parts-1;
 
 	document.getElementById('act1').value=Math.round(thewordcount.value*0.25);
-		document.getElementById('hero1').value=Math.round(thewordcount.value*0.05);
-			document.getElementById('tot1').value=Number(document.getElementById('hero1').value)
-		document.getElementById('hero2').value=Math.round(thewordcount.value*0.05);
-			document.getElementById('tot2').value=Number(document.getElementById('hero2').value)+Number(document.getElementById('tot1').value)
-		document.getElementById('hero3').value=Math.round(thewordcount.value*0.05);
-			document.getElementById('tot3').value=Number(document.getElementById('hero3').value)+Number(document.getElementById('tot2').value)
-		document.getElementById('hero4').value=Math.round(thewordcount.value*0.05);
-			document.getElementById('tot4').value=Number(document.getElementById('hero4').value)+Number(document.getElementById('tot3').value)
-		document.getElementById('hero5').value=Math.round(act1.value-(Math.round(thewordcount.value*0.05)*4));
-			document.getElementById('tot5').value=Number(document.getElementById('hero5').value)+Number(document.getElementById('tot4').value)
+		if (hero1c.checked == 1){
+			document.getElementById('hero1').value=Math.round(thewordcount.value*0.25*act1per);
+			document.getElementById('tot1').value=Number(document.getElementById('hero1').value);
+			hero1.style.backgroundColor = "";
+			tot1.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero1').value=0;
+			document.getElementById('tot1').value=0;
+			hero1.style.backgroundColor = "black";
+			tot1.style.backgroundColor = "black";
+		}
+		if (hero2c.checked == 1){
+			document.getElementById('hero2').value=Math.round(thewordcount.value*0.25*act1per);
+			document.getElementById('tot2').value=Number(document.getElementById('hero2').value)+Number(document.getElementById('tot1').value);
+			hero2.style.backgroundColor = "";
+			tot2.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero2').value=0;
+			document.getElementById('tot2').value=Number(document.getElementById('tot1').value);
+			hero2.style.backgroundColor = "black";
+			tot2.style.backgroundColor = "black";
+		}
+		if (hero3c.checked == 1){
+			document.getElementById('hero3').value=Math.round(thewordcount.value*0.25*act1per);
+			document.getElementById('tot3').value=Number(document.getElementById('hero3').value)+Number(document.getElementById('tot2').value);
+			hero3.style.backgroundColor = "";
+			tot3.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero3').value=0;
+			document.getElementById('tot3').value=Number(document.getElementById('tot2').value);
+			hero3.style.backgroundColor = "black";
+			tot3.style.backgroundColor = "black";
+		}
+		if (hero4c.checked == 1){
+			document.getElementById('hero4').value=Math.round(thewordcount.value*0.25*act1per);
+			document.getElementById('tot4').value=Number(document.getElementById('hero4').value)+Number(document.getElementById('tot3').value);
+			hero4.style.backgroundColor = "";
+			tot4.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero4').value=0;
+			document.getElementById('tot4').value=Number(document.getElementById('tot3').value);
+			hero4.style.backgroundColor = "black";
+			tot4.style.backgroundColor = "black";
+		}
+		if (hero5c.checked == 1){
+			document.getElementById('hero5').value=Math.round(thewordcount.value*0.25*act1per);
+			document.getElementById('tot5').value=Number(document.getElementById('hero5').value)+Number(document.getElementById('tot4').value);
+			hero5.style.backgroundColor = "";
+			tot5.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero5').value=0;
+			document.getElementById('tot5').value=Number(document.getElementById('tot4').value);
+			hero5.style.backgroundColor = "black";
+			tot5.style.backgroundColor = "black";
+		}
+
+		if (document.getElementById('tot5').value != document.getElementById('act1').value){
+			if (hero5c.checked == 1){
+				document.getElementById('hero5').value=Math.round(act1.value-(Math.round(thewordcount.value*0.25*act1per)*act1fix));
+				document.getElementById('tot5').value=Number(document.getElementById('hero5').value)+Number(document.getElementById('tot4').value);
+			} else if (hero4c.checked == 1){
+				document.getElementById('hero4').value=Math.round(act1.value-(Math.round(thewordcount.value*0.25*act1per)*act1fix));
+				document.getElementById('tot4').value=Number(document.getElementById('hero4').value)+Number(document.getElementById('tot3').value);
+			} else if (hero3c.checked == 1){
+				document.getElementById('hero3').value=Math.round(act1.value-(Math.round(thewordcount.value*0.25*act1per)*act1fix));
+				document.getElementById('tot3').value=Number(document.getElementById('hero3').value)+Number(document.getElementById('tot2').value);
+			} else if (hero2c.checked == 1){
+				document.getElementById('hero2').value=Math.round(act1.value-(Math.round(thewordcount.value*0.25*act1per)*act1fix));
+				document.getElementById('tot2').value=Number(document.getElementById('hero2').value)+Number(document.getElementById('tot1').value);
+			}
+		}
+
 	document.getElementById('act2').value=Math.round(thewordcount.value*0.5);
-		document.getElementById('hero6').value=Math.round(thewordcount.value*0.125);
+		if (hero6c.checked == 1){
+			document.getElementById('hero6').value=Math.round(thewordcount.value*0.5*act2per);
 			document.getElementById('tot6').value=Number(document.getElementById('hero6').value)+Number(document.getElementById('tot5').value)
-		document.getElementById('hero7').value=Math.round(thewordcount.value*0.125);
+			hero6.style.backgroundColor = "";
+			tot6.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero6').value=0
+			document.getElementById('tot6').value=Number(document.getElementById('tot5').value)
+			hero6.style.backgroundColor = "black";
+			tot6.style.backgroundColor = "black";
+		}
+		if (hero7c.checked == 1){
+			document.getElementById('hero7').value=Math.round(thewordcount.value*0.5*act2per);
 			document.getElementById('tot7').value=Number(document.getElementById('hero7').value)+Number(document.getElementById('tot6').value)
-		document.getElementById('hero8').value=Math.round(thewordcount.value*0.125);
+			hero7.style.backgroundColor = "";
+			tot7.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero7').value=0
+			document.getElementById('tot7').value=Number(document.getElementById('tot6').value)
+			hero7.style.backgroundColor = "black";
+			tot7.style.backgroundColor = "black";
+		}
+		if (hero8c.checked == 1){
+			document.getElementById('hero8').value=Math.round(thewordcount.value*0.5*act2per);
 			document.getElementById('tot8').value=Number(document.getElementById('hero8').value)+Number(document.getElementById('tot7').value)
-		document.getElementById('hero9').value=Math.round(act2.value-(Math.round(thewordcount.value*0.125)*3));
+			hero8.style.backgroundColor = "";
+			tot8.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero8').value=0
+			document.getElementById('tot8').value=Number(document.getElementById('tot7').value)
+			hero8.style.backgroundColor = "black";
+			tot8.style.backgroundColor = "black";
+		}
+		if (hero9c.checked == 1){
+			document.getElementById('hero9').value=Math.round(thewordcount.value*0.5*act2per);
 			document.getElementById('tot9').value=Number(document.getElementById('hero9').value)+Number(document.getElementById('tot8').value)
+			hero9.style.backgroundColor = "";
+			tot9.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero9').value=0
+			document.getElementById('tot9').value=Number(document.getElementById('tot8').value)
+			hero9.style.backgroundColor = "black";
+			tot9.style.backgroundColor = "black";
+		}
+
+		if (document.getElementById('tot9').value != document.getElementById('act2').value){
+			if (hero9c.checked == 1){
+				document.getElementById('hero9').value=Math.round(act2.value-(Math.round(thewordcount.value*0.5*act2per)*act2fix));
+				document.getElementById('tot9').value=Number(document.getElementById('hero9').value)+Number(document.getElementById('tot8').value);
+			} else if (hero8c.checked == 1){
+				document.getElementById('hero8').value=Math.round(act2.value-(Math.round(thewordcount.value*0.5*act2per)*act2fix));
+				document.getElementById('tot8').value=Number(document.getElementById('hero8').value)+Number(document.getElementById('tot7').value);
+			} else if (hero7c.checked == 1){
+				document.getElementById('hero7').value=Math.round(act2.value-(Math.round(thewordcount.value*0.5*act2per)*act2fix));
+				document.getElementById('tot7').value=Number(document.getElementById('hero7').value)+Number(document.getElementById('tot6').value);
+			} else if (hero6c.checked == 1){
+				document.getElementById('hero6').value=Math.round(act2.value-(Math.round(thewordcount.value*0.5*act2per)*act2fix));
+				document.getElementById('tot6').value=Number(document.getElementById('hero6').value)+Number(document.getElementById('tot5').value);
+			}
+		}
+
 	document.getElementById('act3').value=Math.round(thewordcount.value*0.25);
-		document.getElementById('hero10').value=Math.round(thewordcount.value*0.0833333333);
+		if (hero10c.checked == 1){
+			document.getElementById('hero10').value=Math.round(thewordcount.value*0.25*act3per);
 			document.getElementById('tot10').value=Number(document.getElementById('hero10').value)+Number(document.getElementById('tot9').value)
-		document.getElementById('hero11').value=Math.round(thewordcount.value*0.0833333333);
+			hero10.style.backgroundColor = "";
+			tot10.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero10').value=0
+			document.getElementById('tot10').value=Number(document.getElementById('tot9').value)
+			hero10.style.backgroundColor = "black";
+			tot10.style.backgroundColor = "black";
+		}
+		if (hero11c.checked == 1){
+			document.getElementById('hero11').value=Math.round(thewordcount.value*0.25*act3per);
 			document.getElementById('tot11').value=Number(document.getElementById('hero11').value)+Number(document.getElementById('tot10').value)
-		document.getElementById('hero12').value=Math.round(thewordcount.value-document.getElementById('tot11').value);
+			hero11.style.backgroundColor = "";
+			tot11.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero11').value=0
+			document.getElementById('tot11').value=Number(document.getElementById('tot10').value)
+			hero11.style.backgroundColor = "black";
+			tot11.style.backgroundColor = "black";
+		}
+		if (hero12c.checked == 1){
+			document.getElementById('hero12').value=Math.round(thewordcount.value*0.25*act3per);
 			document.getElementById('tot12').value=Number(document.getElementById('hero12').value)+Number(document.getElementById('tot11').value)
+			hero12.style.backgroundColor = "";
+			tot12.style.backgroundColor = "";
+		} else {
+			document.getElementById('hero12').value=0
+			document.getElementById('tot12').value=Number(document.getElementById('tot11').value)
+			hero12.style.backgroundColor = "black";
+			tot12.style.backgroundColor = "black";
+		}
+
+		if (document.getElementById('tot12').value != document.getElementById('act3').value){
+			if (hero12c.checked == 1){
+				document.getElementById('hero12').value=Math.round(act3.value-(Math.round(thewordcount.value*0.25*act3per)*act3fix));
+				document.getElementById('tot12').value=Number(document.getElementById('hero12').value)+Number(document.getElementById('tot11').value);
+			} else if (hero8c.checked == 1){
+				document.getElementById('hero11').value=Math.round(act3.value-(Math.round(thewordcount.value*0.25*act3per)*act3fix));
+				document.getElementById('tot11').value=Number(document.getElementById('hero11').value)+Number(document.getElementById('tot10').value);
+			} else if (hero7c.checked == 1){
+				document.getElementById('hero10').value=Math.round(act3.value-(Math.round(thewordcount.value*0.25*act3per)*act3fix));
+				document.getElementById('tot10').value=Number(document.getElementById('hero10').value)+Number(document.getElementById('tot9').value);
+			}
+		}
+
 }
 </script>
 
@@ -76,7 +256,7 @@ You'll be presented with word count goals based on the standard Three Act Struct
 combined with the Twelve Step Hero's Journey. The "Section Count" column shows how many
 words (approximately) that step in the Hero's Journey should be in order to keep on 
 track towards your word count goal within the normal 25%/50%/25% structure of the standard
-Three Act Structure. The "Running Total" column shows approxiumately how many words you should
+Three Act Structure. The "Running Total" column shows approximately how many words you should
 have total in your story by the time you finish writing that step of the Hero's Journey.
 You can use this table as a sort of ruler or guideline to make sure
 you're creating a cohesive story that doesn't drag on too long in spots or that does not devote
@@ -88,22 +268,22 @@ this is only a guide and you should feel free to deviate from the line!
 <tr><td>Enter your Word Count Goal here:</td><td><input type="number" id="wordcount"></td><td><input type="submit" value="Calculate" onclick="dothecalc()"></td></tr>
 <tr bgcolor="yellow"><td>Act I (25%)</td><td align="center" colspan="2"><input type="number" readonly id="act1"></td></tr>
 <tr><td>&nbsp;</td><td align="center">Section Count</td><td align="center">Running Total</td></tr>
-<tr><td>1. Ordinary World (5%)</td><td><input type="number" readonly id="hero1"></td><td><input type="number" readonly id="tot1"></td></tr>
-<tr><td>2. Call To Adventure (5%)</td><td><input type="number" readonly id="hero2"></td><td><input type="number" readonly id="tot2"></td></tr>
-<tr><td>3. Refusal Of The Call (5%)</td><td><input type="number" readonly id="hero3"></td><td><input type="number" readonly id="tot3"></td></tr>
-<tr><td>4. Meeting The Mentor (5%)</td><td><input type="number" readonly id="hero4"></td><td><input type="number" readonly id="tot4"></td></tr>
-<tr><td>5. Crossing The Threshold (5%)</td><td><input type="number" readonly id="hero5"></td><td><input type="number" readonly id="tot5"></td></tr>
+<tr><td><input type="checkbox" id="hero1c" value=1 checked> 1. Ordinary World (5%)</td><td><input type="number" readonly id="hero1"></td><td><input type="number" readonly id="tot1"></td></tr>
+<tr><td><input type="checkbox" id="hero2c" value=1 checked> 2. Call To Adventure (5%)</td><td><input type="number" readonly id="hero2"></td><td><input type="number" readonly id="tot2"></td></tr>
+<tr><td><input type="checkbox" id="hero3c" value=1 checked> 3. Refusal Of The Call (5%)</td><td><input type="number" readonly id="hero3"></td><td><input type="number" readonly id="tot3"></td></tr>
+<tr><td><input type="checkbox" id="hero4c" value=1 checked> 4. Meeting The Mentor (5%)</td><td><input type="number" readonly id="hero4"></td><td><input type="number" readonly id="tot4"></td></tr>
+<tr><td><input type="checkbox" id="hero5c" value=1 checked> 5. Crossing The Threshold (5%)</td><td><input type="number" readonly id="hero5"></td><td><input type="number" readonly id="tot5"></td></tr>
 <tr bgcolor="yellow"><td>Act II (50%)</td><td align="center" colspan="2"><input type="number" readonly id="act2"></td></tr>
 <tr><td>&nbsp;</td><td align="center">Section Count</td><td align="center">Running Total</td></tr>
-<tr><td>6. Tests, Allies, Enemies (12.5%)</td><td><input type="number" readonly id="hero6"></td><td><input type="number" readonly id="tot6"></td></tr>
-<tr><td>7. Approach To The Inmost Cave (12.5%)</td><td><input type="number" readonly id="hero7"></td><td><input type="number" readonly id="tot7"></td></tr>
-<tr><td>8. Supreme Ordeal (12.5%)</td><td><input type="number" readonly id="hero8"></td><td><input type="number" readonly id="tot8"></td></tr>
-<tr><td>9. Reward (12.5%)</td><td><input type="number" readonly id="hero9"></td><td><input type="number" readonly id="tot9"></td></tr>
+<tr><td><input type="checkbox" id="hero6c" value=1 checked> 6. Tests, Allies, Enemies (12.5%)</td><td><input type="number" readonly id="hero6"></td><td><input type="number" readonly id="tot6"></td></tr>
+<tr><td><input type="checkbox" id="hero7c" value=1 checked> 7. Approach To The Inmost Cave (12.5%)</td><td><input type="number" readonly id="hero7"></td><td><input type="number" readonly id="tot7"></td></tr>
+<tr><td><input type="checkbox" id="hero8c" value=1 checked> 8. Supreme Ordeal (12.5%)</td><td><input type="number" readonly id="hero8"></td><td><input type="number" readonly id="tot8"></td></tr>
+<tr><td><input type="checkbox" id="hero9c" value=1 checked> 9. Reward (12.5%)</td><td><input type="number" readonly id="hero9"></td><td><input type="number" readonly id="tot9"></td></tr>
 <tr bgcolor="yellow"><td>Act III (25%)</td><td align="center" colspan="2"><input type="number" readonly id="act3"></td></tr>
 <tr><td>&nbsp;</td><td align="center">Section Count</td><td align="center">Running Total</td></tr>
-<tr><td>10. The Road Back (8.33%)</td><td><input type="number" readonly id="hero10"></td><td><input type="number" readonly id="tot10"></td></tr>
-<tr><td>11. Resurrection (8.33%)</td><td><input type="number" readonly id="hero11"></td><td><input type="number" readonly id="tot11"></td></tr>
-<tr><td>12. Return With The Elixir (8.33%)</td><td><input type="number" readonly id="hero12"></td><td><input type="number" readonly id="tot12"></td></tr>
+<tr><td><input type="checkbox" id="hero10c" value=1 checked> 10. The Road Back (8.33%)</td><td><input type="number" readonly id="hero10"></td><td><input type="number" readonly id="tot10"></td></tr>
+<tr><td><input type="checkbox" id="hero11c" value=1 checked> 11. Resurrection (8.33%)</td><td><input type="number" readonly id="hero11"></td><td><input type="number" readonly id="tot11"></td></tr>
+<tr><td><input type="checkbox" id="hero12c" value=1 checked> 12. Return With The Elixir (8.33%)</td><td><input type="number" readonly id="hero12"></td><td><input type="number" readonly id="tot12"></td></tr>
 </table>
 
 
