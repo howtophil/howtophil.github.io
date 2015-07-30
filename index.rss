@@ -39,10 +39,10 @@
 		document.write("<br><br>");
 
 		var xmlHttp = new XMLHttpRequest();
-		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addneg, false );
+		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addsnark, false );
 		xmlHttp.send( null );
 		document.write("I'll Bitvote you!:<br><font size=2>" + addsnark + "</font><br>");
-		document.write("<img src='https://blockchain.info/qr?data=" + addneg + "&size=100'><br>");
+		document.write("<img src='https://blockchain.info/qr?data=" + addsnark + "&size=100'><br>");
 		document.write("Satoshi Votes: ");
 		document.write(Number(xmlHttp.responseText).toLocaleString());
 		document.write("<br><br>");

@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="txt/html; charset=UTF-8">
   <meta name="Generator" content="BlazeBlogger 1.2.0">
   <meta name="Copyright" content="&copy; 2015 HowToPhil">
-  <meta name="Date" content="Thu Jul 30 17:42:45 2015">
+  <meta name="Date" content="Thu Jul 30 17:44:19 2015">
   <meta name="Description" content="Howtophil brings you all the howto videos, diagrams, and more!">
   <meta name="Keywords" content="Archive for July 2015, howto, instruction, furoshiki, how to, howtophil, phillip rhoades, make, create, how do you">
   <link rel="stylesheet" href="../../default.css" type="text/css">
@@ -68,10 +68,10 @@
 		document.write("<br><br>");
 
 		var xmlHttp = new XMLHttpRequest();
-		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addneg, false );
+		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addsnark, false );
 		xmlHttp.send( null );
 		document.write("I'll Bitvote you!:<br><font size=2>" + addsnark + "</font><br>");
-		document.write("<img src='https://blockchain.info/qr?data=" + addneg + "&size=100'><br>");
+		document.write("<img src='https://blockchain.info/qr?data=" + addsnark + "&size=100'><br>");
 		document.write("Satoshi Votes: ");
 		document.write(Number(xmlHttp.responseText).toLocaleString());
 		document.write("<br><br>");
