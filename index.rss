@@ -6,6 +6,50 @@
   <description>Has the skill</description>
   <generator>BlazeBlogger 1.2.0</generator>
   <item>
+    <title>Bitvote Poll: Taylor Swift or Nicky Minaj, who is crazier?</title>
+    <link>http://howtophil.com/2015/07/6-bitvote-poll-taylor-swift-or-nicky-minaj-who-is-crazier/</link>
+    <guid>http://howtophil.com/2015/07/6-bitvote-poll-taylor-swift-or-nicky-minaj-who-is-crazier/</guid>
+    <pubDate>Thu, 30 Jul 2015 00:00:01 GMT</pubDate>
+    <description><![CDATA[
+<div id="bitvote" style="width:400px;">
+        <script>
+		var question = "Who is crazier, Nicki Minaj or Taylor Swift?";
+		var addpos = "15ZwTDYQUxQuWoZ7yFUnLroHjAGBnpNahJ";
+		var addneg = "19tTAyQuPkMtjXGWg6y2m3TNxe18NxwKA2";
+		var addsnark = "19tTAyQuPkMtjXGWg6y2m3TNxe18NxwKA2";
+		document.write("<hr><h3>Question: " + question + "</h3>");
+
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addpos, false );
+		xmlHttp.send( null );
+		document.write("Vote for Taylor Swift by sending Bitcoin to:<br><font size=2>" + addpos + "</font><br>");
+		document.write("<img src='https://blockchain.info/qr?data=" + addpos + "&size=100'><br>");
+		document.write("Satoshi Votes: ");
+		document.write(Number(xmlHttp.responseText).toLocaleString());
+		document.write("<br><br>");
+
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addneg, false );
+		xmlHttp.send( null );
+		document.write("Vote Nicki Minaj by sending Bitcoin to:<br><font size=2>" + addneg + "</font><br>");
+		document.write("<img src='https://blockchain.info/qr?data=" + addneg + "&size=100'><br>");
+		document.write("Satoshi Votes: ");
+		document.write(Number(xmlHttp.responseText).toLocaleString());
+		document.write("<br><br>");
+
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addneg, false );
+		xmlHttp.send( null );
+		document.write("I'll Bitvote you!:<br><font size=2>" + addsnark + "</font><br>");
+		document.write("<img src='https://blockchain.info/qr?data=" + addneg + "&size=100'><br>");
+		document.write("Satoshi Votes: ");
+		document.write(Number(xmlHttp.responseText).toLocaleString());
+		document.write("<br><br>");
+        </script>
+</div>
+    ]]></description>
+  </item>
+  <item>
     <title>How To Turn A Furoshiki Or Square Cloth Into A Two Handle Purse</title>
     <link>http://howtophil.com/2010/10/5-how-to-turn-a-furoshiki-or-square-cloth-into-a-two-handle-purse/</link>
     <guid>http://howtophil.com/2010/10/5-how-to-turn-a-furoshiki-or-square-cloth-into-a-two-handle-purse/</guid>

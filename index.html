@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="txt/html; charset=UTF-8">
   <meta name="Generator" content="BlazeBlogger 1.2.0">
   <meta name="Copyright" content="&copy; 2015 HowToPhil">
-  <meta name="Date" content="Thu Jul 30 16:30:58 2015">
+  <meta name="Date" content="Thu Jul 30 17:39:23 2015">
   <meta name="Description" content="Howtophil brings you all the howto videos, diagrams, and more!">
   <meta name="Keywords" content="howto, instruction, furoshiki, how to, howtophil, phillip rhoades, make, create, how do you">
   <link rel="stylesheet" href="default.css" type="text/css">
@@ -34,6 +34,48 @@
 
   <div id="content">
 
+<h2 class="post"><a href="2015/07/6-bitvote-poll-taylor-swift-or-nicky-minaj-who-is-crazier" rel="permalink">Bitvote Poll: Taylor Swift or Nicky Minaj, who is crazier?</a></h2>
+<div class="information">
+   <span class="date">2015-07-30</span> by <span class="author">HowToPhil</span>
+</div>
+
+<div id="bitvote" style="width:400px;">
+        <script>
+		var question = "Who is crazier, Nicki Minaj or Taylor Swift?";
+		var addpos = "15ZwTDYQUxQuWoZ7yFUnLroHjAGBnpNahJ";
+		var addneg = "19tTAyQuPkMtjXGWg6y2m3TNxe18NxwKA2";
+		var addsnark = "19tTAyQuPkMtjXGWg6y2m3TNxe18NxwKA2";
+		document.write("<hr><h3>Question: " + question + "</h3>");
+
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addpos, false );
+		xmlHttp.send( null );
+		document.write("Vote for Taylor Swift by sending Bitcoin to:<br><font size=2>" + addpos + "</font><br>");
+		document.write("<img src='https://blockchain.info/qr?data=" + addpos + "&size=100'><br>");
+		document.write("Satoshi Votes: ");
+		document.write(Number(xmlHttp.responseText).toLocaleString());
+		document.write("<br><br>");
+
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addneg, false );
+		xmlHttp.send( null );
+		document.write("Vote Nicki Minaj by sending Bitcoin to:<br><font size=2>" + addneg + "</font><br>");
+		document.write("<img src='https://blockchain.info/qr?data=" + addneg + "&size=100'><br>");
+		document.write("Satoshi Votes: ");
+		document.write(Number(xmlHttp.responseText).toLocaleString());
+		document.write("<br><br>");
+
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "GET", "https://blockchain.info/q/getreceivedbyaddress/" + addneg, false );
+		xmlHttp.send( null );
+		document.write("I'll Bitvote you!:<br><font size=2>" + addsnark + "</font><br>");
+		document.write("<img src='https://blockchain.info/qr?data=" + addneg + "&size=100'><br>");
+		document.write("Satoshi Votes: ");
+		document.write(Number(xmlHttp.responseText).toLocaleString());
+		document.write("<br><br>");
+        </script>
+</div>
+
 <h2 class="post"><a href="2010/10/5-how-to-turn-a-furoshiki-or-square-cloth-into-a-two-handle-purse" rel="permalink">How To Turn A Furoshiki Or Square Cloth Into A Two Handle Purse</a></h2>
 <div class="information">
    <span class="date">2010-10-03</span> by <span class="author">HowToPhil</span>, tagged as <span class="tags"><a href="tags/furoshiki">furoshiki</a>, <a href="tags/knots">knots</a>, <a href="tags/purse">purse</a>, <a href="tags/silk-scarf">silk scarf</a></span>
@@ -57,13 +99,7 @@
    <span class="date">2010-10-03</span> by <span class="author">HowToPhil</span>, tagged as <span class="tags"><a href="tags/bottles">bottles</a>, <a href="tags/furoshiki">furoshiki</a>, <a href="tags/knots">knots</a>, <a href="tags/silk-scarf">silk scarf</a></span>
 </div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XbFjCybyKIU" frameborder="0" allowfullscreen></iframe>
-
-<h2 class="post"><a href="2010/10/1-how-to-turn-a-furoshiki-or-square-cloth-into-a-single-handled-purse" rel="permalink">How To Turn A Furoshiki Or Square Cloth Into A Single Handled Purse</a></h2>
-<div class="information">
-   <span class="date">2010-10-03</span> by <span class="author">howtophil</span>, tagged as <span class="tags"><a href="tags/furoshiki">furoshiki</a>, <a href="tags/knots">knots</a>, <a href="tags/purse">purse</a>, <a href="tags/silk-scarf">silk scarf</a></span>
-</div>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/ytyAxsmdoGc" frameborder="0" allowfullscreen></iframe>
+<div class="previous"><a href="index1.html" rel="prev">&laquo; Previous</a></div>
 
 
     <div id="disqus_thread"></div>
@@ -97,6 +133,7 @@
 
     <h2>Archive</h2>
     <ul>
+<li><a href="2015/07">July 2015 (1)</a></li>
 <li><a href="2010/10">October 2010 (5)</a></li>
     </ul>
 
