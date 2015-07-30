@@ -10,12 +10,13 @@
     <link>http://howtophil.com/2015/07/6-bitvote-poll-taylor-swift-or-nicky-minaj-who-is-crazier/</link>
     <guid>http://howtophil.com/2015/07/6-bitvote-poll-taylor-swift-or-nicky-minaj-who-is-crazier/</guid>
     <pubDate>Thu, 30 Jul 2015 00:00:01 GMT</pubDate>
-    <description><![CDATA[
-<div id="bitvote" style="width:400px;">
+    <description><![CDATA[<p>Cast your vote with some Bitcoin.</p>
+
+<div id="bitvote">
         <script>
 		var question = "Who is crazier, Nicki Minaj or Taylor Swift?";
-		var addpos = "15ZwTDYQUxQuWoZ7yFUnLroHjAGBnpNahJ";
-		var addneg = "19tTAyQuPkMtjXGWg6y2m3TNxe18NxwKA2";
+		var addpos = "13UUaxcfGVUAbNcK93PGnbwf3TLaYSymMS";
+		var addneg = "1Ci9SsaX5TUsmNhY34G49k1phqa8kCnKH2";
 		var addsnark = "19tTAyQuPkMtjXGWg6y2m3TNxe18NxwKA2";
 		document.write("<hr><h3>Question: " + question + "</h3>");
 
