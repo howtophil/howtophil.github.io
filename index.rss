@@ -17,7 +17,7 @@
 		var question = "Who is crazier, Nicki Minaj or Taylor Swift?";
 		var addpos = "13UUaxcfGVUAbNcK93PGnbwf3TLaYSymMS";
 		var addneg = "1Ci9SsaX5TUsmNhY34G49k1phqa8kCnKH2";
-		var addsnark = "19tTAyQuPkMtjXGWg6y2m3TNxe18NxwKA2";
+		var addsnark = "1CxSMffZ4x7rP1SrpPqTZ4EMhHWX7QG2CE";
 		document.write("<hr><h3>Question: " + question + "</h3>");
 
 		var xmlHttp = new XMLHttpRequest();
