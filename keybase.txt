@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/howtophil
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://howtophil.com
+  * I am howtophil (https://keybase.io/howtophil) on keybase.
+  * I have a public key with fingerprint 0224 3A24 A79D E971 3EBA  FD73 5D98
+  * F40C C44E CE17
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid":
+"01017e209129856a3d972a8546f2cbe3bb77d3aeb5beca126c3aaa3cfdd92c092c940a",
+            "fingerprint": "02243a24a79de9713ebafd735d98f40cc44ece17",
+            "host": "keybase.io",
+            "key_id": "5d98f40cc44ece17",
+            "kid":
+            "01017e209129856a3d972a8546f2cbe3bb77d3aeb5beca126c3aaa3cfdd92c092c940a",
+            "uid": "c00560cf4eefd27fae933f7d688c8919",
+            "username": "howtophil"
+        },
+        "service": {
+            "hostname": "howtophil.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1482695681,
+    "expire_in": 157680000,
+    "prev":
+    "9a890e5e65acf165e3f1097796458a18fc4c6f675ac8a1bfb347d80bf3082811",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUltIVUEUvddeaNkDqdAC9WRdkkud98zcMCiK8qcXvfyQ48ycOXrS7jnee3zU
+zQiJyt71Y9ILioiiKCujkiyiAtMb9CJK6qcoi0oCs8So5kj9RJ8NDMPee601a2/2
+3vQhgZRg8YHeUbcX3Z8Y7HhHAqtL8tISAnHMdUIkIZSzwYdVmCzuGeW2KUQEURIl
+wGQRSTKCmo4VEwEZQ03VLZkSphACgKlgRjTCKJZknSoYY4VapolkKvKLVBELYcGy
+o6Us5sbsqOfLyrKqYFnFAJkMAUlhBFsmUDQTQUsVKVVVRpkEOLHMifsMbo7gOJth
+OzzHA2PQ3j/w/9l31aAcFUVNF6mlMmaZMrAwQ4piAVOHkEIkIR8YZ7EoXss4usyp
+8Ry3zK4Q6sICT1fblPmT9Vv5GzKDOms52405nkOdCr/keW7EZ3rrXB9aw4jxW8Qg
+dtTkg+SEahaL205UiEgcST3bV5VUKOtI06EUFlita8eYYfsIDehQ5Mf/hlVzSYQh
+ElmRxnQNU0vSNaZYkogAQLqqQSxBi6pUt3TAyzwkFlFUYEKRWIoIZShJgt9XZdQR
+IoD7xKVcM26XRrFXFWNCXVpDcPLQQDAlMHxYir9igbTUsX/2btrZET8tL/NsaNyO
+PrdxutCLbybqX/ddbD3ZUNfQUVlb2N0XOrmze6DpcnAgr2D/wvL1K5Ys8+50ZX9o
+fu1s3H4j/1b4WsnHd+VbFsl3NrQefVi4+uvcdvDoRP+E60c25D5+UETKmm+8Sdm2
+5mfx4oez2160dO7/3BswjEuPu6q+fdraQ7rPJPuze9R5T3a/nQOXHmtOjinwQu3L
+J3WWProQaYxC1LNp1ffkzAWjjfzOgdTqK7ueZ3z4cfrclDzpZdazvJGTw2LVwKUv
+WbM+tY9/f/BqV4abeXhPzt2V84/XGMPPZ6Y+Td57NX1hYnNTbnqiqbaNnJL3HTpX
+dP9NXcvLjJGdLVNzQh31vwA=
+=qE7d
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/howtophil
+
+==================================================================
