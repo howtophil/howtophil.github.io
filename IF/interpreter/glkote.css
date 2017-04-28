@@ -72,6 +72,7 @@
 
 .GridWindow {
   background: #696969;
+  color: #FFFFFF;
   overflow: hidden;
   font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace; /* necessary! */
   font-size: 14px;
@@ -130,6 +131,7 @@
 .BufferWindow .Input {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 15px;
+  color: #FFFFFF;
 }
 
 .GridWindow .Input {
@@ -209,7 +211,7 @@
 
 .Style_input {
   font-weight: bold;
-  color: #300000;
+  color: #FFFFFF;
 }
 
 .Style_user1 {
