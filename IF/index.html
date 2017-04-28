@@ -1,49 +1,62 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Phillip J Rhoades - Getting To Work And Other Bullshit</title>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <meta name="author" content="Phillip J Rhoades" />
-  <meta name="description" content="A page for the game Getting To Work And Other Bullshit by Phillip J Rhoades." />
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
- </head>
-<body>
-<div class="container">
-<div class="coverimage"><span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></span></div>
-<div class="introduction">
-	<h1><span>Getting To Work And Other Bullshit</span></h1>
-	<h2><span>Phillip J Rhoades</span></h2>
-	<div class="bibliography"><span>Release 1</span></div>
-</div>
-<div class="links">
-	<ul>
-	<li><div class="download"><a href="Getting To Work And Other Bulls.gblorb">Story File</a> <span class="filetype">(Blorb,&nbsp;584KB)</span></div></li>
-	<div class="auxiliary"><li><a href="play.html">Play In-Browser</a> <span class="filetype">(link)</span></li></div>
-	</ul>
-</div>
+  <title>Phillip J Rhoades - Getting To Work And Other Bullshit — Play</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="author" content="Phillip J Rhoades">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="interpreter/glkote.css" type="text/css">
+<link rel="stylesheet" href="interpreter/dialog.css" type="text/css">
+<script src="interpreter/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="interpreter/glkote.min.js" type="text/javascript"></script>
+<script src="interpreter/quixe.min.js" type="text/javascript"></script>
 
-<div class="about"><span><p>Every day, you've got to get to work by walking up the sidewalk. Sure, it's some bullshit, not having a car and having to deal with rain, snow, orcs, and giant bees.... wait.</p><p>Orcs? Bees?</p><p>You've already left your house and you're on the sidewalk, just trying to get past some ridiculous creatures and get to work!</p></span></div>
+<script src="interpreter/resourcemap.js" type="text/javascript"></script>
 
-<div class="playinfo">
-	<p>Getting To Work And Other Bullshit was created with <a href="http://inform7.com/">Inform</a> and has IFID 5AEB4C4C-2AF4-11E7-9800-88AE1DA6CC50. To play a work like this one, you need an interpreter program: many are available, among them <a href="http://www.logicalshift.demon.co.uk/mac/zoom.html">Zoom
-for Mac OS X</a> and for <a href="http://www.logicalshift.demon.co.uk/unix/zoom/">Unix</a>; <a href="http://freespace.virgin.net/davidk.kinder/frotz.html">Windows Frotz</a> or <a href="http://freespace.virgin.net/davidk.kinder/glulxe.html">Windows Glulxe</a> for Windows.  
-Or you can play without downloading anything by following the 'Play In-Browser'
-link, using the Phillip interpreter. You'll need to have Javascript enabled
-on your web browser.</p>
-</div> 
-
-</div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-18930772-1', 'auto');
-  ga('send', 'pageview');
-
+<script type="text/javascript">
+game_options = {
+image_info_map: 'StaticImageInfo',  // image data is here, not in blorb
+use_query_story: false,
+set_page_title: false,
+inspacing: 0,     // gap between windows
+outspacing: 0     // gap between windows and edge of gameport
+};
 </script>
 
+<script src="interpreter/Getting To Work And Other Bulls.gblorb.js" type="text/javascript"></script>
+  
+ </head>
+<body class="play">
+<div id="header"><div id="subheader">
+<div class="framelabel"></div>
+<div class="links">
+</div>
+</div></div>
+
+<div id="column"><div id="subcolumn">
+<div class="container">
+
+<div id="gameport">
+<div id="windowport">
+<noscript><hr>
+<p>You'll need to turn on Javascript in your web browser to play this game.</p>
+<hr></noscript>
+</div>
+<div id="loadingpane">
+<img src="interpreter/waiting.gif" alt="LOADING"><br>
+<em>&nbsp;&nbsp;&nbsp;Loading...</em>
+</div>
+<div id="errorpane" style="display:none;"><div id="errorcontent">...</div></div>
+</div>
+
+</div>
+</div></div>
+
+<div id="footer"><div id="subfooter">
+<div class="framelabel"></div>
+</div></div>
 </body>
 </html>
 
