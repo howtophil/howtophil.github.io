@@ -8,8 +8,8 @@ Created by Andrew Plotkin (erkyrath@eblong.com). These template files
 are in the public domain.
 
 The header is fixed at 72 pixels high. To change this height, edit
-edit the four CSS lines labelled "header height" (in style.css) from
-"72px" to whatever value you choose.
+the four CSS lines labelled "header height" (in style.css) from
+"20px" to whatever value you choose.
 
 The footer, similarly, is fixed at 48 pixels high. Edit the
 "footer height" lines to change this.
@@ -49,17 +49,17 @@ body
 	top: 0px;
 	bottom: 0px;
 	width: 100%;
-	background: white;
-	color: black;
+	background: #002e63;
+	color: white;
 }
 
 /* Used in index.html and source.html. */
 #pageheader {
 	width: 100%;
 	top: 0px;
-	height: 72px; /* header height */
+	height: 20px; /* header height */
 	margin: 0px;
-	background: #EEE; /* this color fills the header, all the way across */
+	background: #A9A9A9; /* this color fills the header, all the way across */
 }
 
 /* Used in play.html. */
@@ -67,9 +67,9 @@ body
 	position: absolute;
 	width: 100%;
 	top: 0px;
-	height: 72px; /* header height */
+	height: 20px; /* header height */
 	margin: 0px;
-	background: #EEE; /* this color fills the header, all the way across */
+	background: #A9A9A9; /* this color fills the header, all the way across */
 }
 
 /* Used in all pages -- defines the width. */
@@ -84,10 +84,10 @@ body
 /* Used in index.html and source.html. */
 #pagefooter {
 	width: 100%;
-	height: 48px; /* footer height */
+	height: 20px; /* footer height */
 	margin: 0px;
 	margin-top: 2em;
-	background: #EEE; /* this color fills the footer, all the way across */
+	background: #A9A9A9; /* this color fills the footer, all the way across */
 }
 
 /* Used in play.html. */
@@ -95,9 +95,9 @@ body
 	position: absolute;
 	width: 100%;
 	bottom: 0px;
-	height: 48px; /* footer height */
+	height: 20px; /* footer height */
 	margin: 0px;
-	background: #EEE; /* this color fills the footer, all the way across */
+	background: #A9A9A9; /* this color fills the footer, all the way across */
 }
 
 /* Used in all pages -- defines the width. */
@@ -123,7 +123,7 @@ with your own CSS classes.
 /* Used in index.html and source.html. */
 #pagecolumn {
 	width: 100%;
-	top: 72px; /* header height */
+	top: 20px; /* header height */
 	margin: 0px;
 }
 
@@ -131,8 +131,8 @@ with your own CSS classes.
 #column {
 	position: absolute;
 	width: 100%;
-	top: 72px; /* header height */
-	bottom: 48px; /* footer height */
+	top: 20px; /* header height */
+	bottom: 20px; /* footer height */
 	margin: 0px;
 }
 
