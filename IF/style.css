@@ -44,12 +44,11 @@ body
 	font-family: Georgia, Palatino, "Times New Roman", Times, serif;
 	font-size: 100%;
 	-webkit-text-size-adjust: none;
-
 	margin: 0px;
 	top: 0px;
 	bottom: 0px;
 	width: 100%;
-	background: #002e63;
+	background: #000000;
 	color: white;
 }
 
@@ -529,7 +528,7 @@ Styles for play.html
 
 #gameport
 {
-	background: white;
+	background: black;
 	bottom: 0px;
 	left: 1em;
 	line-height: 1.4;
@@ -537,6 +536,9 @@ Styles for play.html
 	position: absolute;
 	right: 0px;
 	top: 0px;
+	border-style: solid;
+	border-width: medium;
+	border-color: lightgrey;
 }
 
 /*
