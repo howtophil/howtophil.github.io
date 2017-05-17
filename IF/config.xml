@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.howtophil.gettingtowork"
+    versionCode = "10"
+    version     = "1.0.0" >
+<!-- versionCode is optional and Android only -->
+  <name>Getting To Work And Other Bullshit</name>
+  <description>
+	<p>Every day, you've got to get to work by walking up the sidewalk. Sure, it's some bullshit, not having a car and having to deal with rain, snow, orcs, and giant bees.... wait. Orcs? Giant bees? You're just trying to get to work here! (Incomplete/Testing)</p>
+  </description>
+  <author href="http://howtophil.com/IF" email="semjaza@gmail.com">
+      Phillip J Rhoades
+  </author>
+</widget>
+

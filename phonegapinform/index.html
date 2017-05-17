@@ -7,10 +7,10 @@
   <meta name="Copyright" content="&copy; 2017 HowToPhil">
   <meta name="Date" content="Tue May 16 23:46:40 2017">
   <meta name="Description" content="Howtophil brings you all the howto videos, diagrams, and more!">
-  <meta name="Keywords" content="howtophil, howto, insctructions, about, howto, instruction, furoshiki, how to, howtophil, phillip rhoades, make, create, how do you">
+  <meta name="Keywords" content="phonegap, inform, inform 7, howto, instruction, furoshiki, how to, howtophil, phillip rhoades, make, create, how do you">
   <link rel="stylesheet" href="../default.css" type="text/css">
   <link rel="alternate" href="../index.rss" title="RSS Feed" type="application/rss+xml">
-  <title>About</title>
+  <title>Stand Alone Inform 7 Games With Phonegap</title>
 </head>
 
 <body>
@@ -34,9 +34,43 @@
 
   <div id="content">
 
-<h2 class="post">About</h2>
+<h2 class="post">Stand Alone Inform 7 Games With Phonegap</h2>
+<p>
+The first thing you'll need to do is sign up for an account on <a href="https://build.phonegap.com/">Adobe Phonegap Build</a>. There's a free option and I can't imagine any Inform based game will get over 50mb in size, so it should work just fine.
+</p>
+<p>
+After you've got your account set up, you'll want to grab <a href="IF/Android.zip">this zip file</a> which contains a template you can use as a starting point for "releasing" a website that can be turned into apk, ios, and windows phone installer packages with Phonegap.
+</p>
+<p>
+Unzip it into your Templates directory, modify the stylesheet and so forth to get the look and feel you want, and then add: 
+</p>
+<code>
+Release along with a "Android" website.
+</code>
+<p>
+to your Inform 7 source.
+</p>
+<p>
+Hit ctrl-shift-r or use Tools->Release to release your project.
+</p>
+<p>
+Rename config.html to config.xml (I had to use .html to get inform to run substitutions, so this is a bit of a hkludge, but so be it)
+</p>
+<p>
+Now, modify the config.xml file as needed. You might have to look up how to add icons, ghet developer keys for eeach platform,e tc. That's a bit beyond this quick tutorial...
+</p>
+<p>
+After you have your config.xml as you like, zip up everything in the release directory.
+</p>
+<p>
+You'll upload that zip to https://build.phonegap.com/apps as a private project.
+</p>
+<p>
+Phonegap will guide you through a vvery basic build wizard and you'll have an apk of your game you can download and install on your phone/tablet/TV/etc.
+</p>
+<p>
 
-This will be where the about goes.
+
 
     <div id="disqus_thread"></div>
     <script type="text/javascript">
