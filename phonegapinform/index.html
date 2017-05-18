@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="txt/html; charset=UTF-8">
   <meta name="Generator" content="BlazeBlogger 1.2.0">
   <meta name="Copyright" content="&copy; 2017 HowToPhil">
-  <meta name="Date" content="Wed May 17 00:19:13 2017">
+  <meta name="Date" content="Thu May 18 14:00:19 2017">
   <meta name="Description" content="Howtophil brings you all the howto videos, diagrams, and more!">
   <meta name="Keywords" content="phonegap, inform, inform 7, howto, instruction, furoshiki, how to, howtophil, phillip rhoades, make, create, how do you">
   <link rel="stylesheet" href="../default.css" type="text/css">
@@ -41,6 +41,9 @@
 The first thing you'll need to do is sign up for an account on <a href="https://build.phonegap.com/">Adobe Phonegap Build</a>. There's a free option and I can't imagine any Inform based game will get over 50mb in size, so it should work just fine.
 </p>
 <p>
+<a href="https://build.phonegap.com/"><img src="http://storage6.static.itmages.com/i/17/0518/h_1495129487_3658811_f5c1d18b97.png"></a>
+</p>
+<p>
 After you've got your account set up, you'll want to grab <a href="/IF/Android.zip">this zip file</a> which contains a template you can use as a starting point for "releasing" a website that can be turned into apk, ios, and windows phone installer packages with Phonegap. You'll probably need <a href="/IF/Quixedark.zip">my "dark" version of the Quixe interpreter</a> too, come to think of it, since I made some color changes there for my "dark" template. I like white text on black screens.
 </p>
 <p>
@@ -53,26 +56,28 @@ Release along with a "Quixedark" interpreter.<br>
 <p>
 to your Inform 7 source.
 </p>
+<p>It'll look a bit like this:<br />
+<img src="http://storage9.static.itmages.com/i/17/0518/h_1495129775_6353104_9ab922a878.png"></p>
 <p>
 Hit ctrl-shift-r or use Tools->Release to release your project.
 </p>
 <p>
-Rename config.html to config.xml (I had to use .html to get inform to run substitutions, so this is a bit of a kludge, but so be it)
+In the release directory, rename config.html to config.xml (I had to use .html to get inform to run substitutions, so this is a bit of a kludge, but so be it)
 </p>
 <p>
-Now, modify the config.xml file as needed. You might have to look up how to add icons, get developer keys for each platform,etc. That's a bit beyond this quick tutorial...
+Now, modify the config.xml file as needed. You might have to look up how to <a href="http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/">add icons</a>, get/generate <a href="http://docs.phonegap.com/phonegap-build/signing/android/">developer keys</a> for each platform, etc. That's a bit beyond this quick tutorial...
 </p>
 <p>
 After you have your config.xml as you like, zip up everything in the release directory.
 </p>
 <p>
-You'll upload that zip to <a href="https://build.phonegap.com/apps">https://build.phonegap.com/apps</a> as a private project.
+You'll upload that zip to <a href="https://build.phonegap.com/apps">https://build.phonegap.com/apps</a> as a private project. (You can also make your code open source and release many games that way)
 </p>
 <p>
 Phonegap will guide you through a very basic build wizard and you'll have an apk of your game you can download and install on your phone/tablet/TV/etc.
 </p>
-<p>
 
+<p><img src="http://storage3.static.itmages.com/i/17/0518/h_1495130350_1737615_774b4a5d57.jpeg"></p>
 
 
     <div id="disqus_thread"></div>
