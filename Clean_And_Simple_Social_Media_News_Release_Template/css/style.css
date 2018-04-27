@@ -1,0 +1,23 @@
+.video {
+	width:450px;
+	height:253px;
+}
+.videocode {
+  height:120px;
+  width:200px;
+}
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.main {
+  	color: #000000;
+	background-color: #ffffff;
+}
+.span2header {
+  width: 130px;
+  padding-left: 10px;
+}
