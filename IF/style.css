@@ -74,7 +74,7 @@ body
 /* Used in all pages -- defines the width. */
 #subheader {
 	position: relative;
-	width: 600px; /* column width */
+	width: 700px; /* column width */
 	height: 100%;
 	margin: auto;
 	/* a background color here will fill the header at a width of 600px */
@@ -146,6 +146,7 @@ with your own CSS classes.
 
 .container
 {
+
 }
 
 /* 
@@ -244,8 +245,7 @@ h2 { font-size: 1em; line-height: .25;}
 
 .about
 {
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin: 1em;
     border-top-style: solid;
 	text-align: left;
 	clear: both;
