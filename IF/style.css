@@ -102,7 +102,7 @@ body
 /* Used in all pages -- defines the width. */
 #subfooter {
 	position: relative;
-	width: 600px; /* column width */
+	width: 700px; /* column width */
 	height: 100%;
 	margin: auto;
 	/* a background color here will fill the footer at a width of 600px */
@@ -138,7 +138,7 @@ with your own CSS classes.
 /* Used in all pages -- defines the width. */
 #subcolumn {
 	position: relative;
-	width: 600px; /* column width */
+	width: 700px; /* column width */
 	height: 100%;
 	margin: auto;
 }
@@ -186,10 +186,11 @@ a:hover
 
 .coverimage
 {
-	margin-top: 3em;
+	margin-top: 0em;
 	margin-right: 1em;
-	text-align: right;
-	float: right;
+	text-align: left;
+	float: left;
+	clear: right;
 } 
 
 /* 
@@ -243,9 +244,12 @@ h2 { font-size: 1em; line-height: .25;}
 
 .about
 {
-	margin-top: 2.8em;
-	margin-left: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+    border-top-style: solid;
 	text-align: left;
+	clear: both;
+	overflow: auto;
 }
 
 /* 
@@ -258,7 +262,7 @@ distance.
 
 .about p + p
 {
-	text-indent: 1.4em;
+	text-indent: 0em;
 	margin-top: 0;
 }
 
