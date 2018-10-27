@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-  <title>Phillip J Rhoades - Wake Up</title>
+  <title>Phillip J Rhoades - Getting To Work And Other Bullshit</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <meta name="author" content="Phillip J Rhoades" />
-  <meta name="description" content="<p>You are awake and alone. Unable to move. Unable to fight against the thing slowly rising from within you. Is there any part of you that can resist? Any part that you can still move? (Based on a true event in my life when I was fourteen)</p>" />
+  <meta name="description" content="<p>Every day, you've got to get to work by walking up the sidewalk. Sure, it's some bullshit, not having a car and having to deal with rain, snow, orcs, and giant bees.... wait. Orcs? Giant bees? You're just trying to get to work here! (Incomplete/Testing)</p>" />
   <meta property="og:image" content="http://howtophil.com/IF/Cover2.jpg" />
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
  </head>
@@ -17,21 +17,17 @@
 <div class="container" style="background-color:white;color:black;border:6px solid black">
 <div class="coverimage"><span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></span></div>
 <div class="about">
-	<h1><span>Wake Up</span></h1>
+	<h1><span>Getting To Work And Other Bullshit</span></h1>
 	<h2><span>By Phillip J Rhoades</span></h2>
-	<div class="playinfo"><p><i>Updated: Friday 5 October 2018 at 12:45.53</i></p></div>
-	<p>You are awake and alone. Unable to move. Unable to fight against the thing slowly rising from within you. Is there any part of you that can resist? Any part that you can still move? (Based on a true event in my life when I was fourteen)</p>
-	<p><i><a href="https://itch.io/jam/ectocomp-2018-english/rate/313614" target="_ecto">* An EctoComp2018 Game</a></i></p>
+	<div class="playinfo"><p><i>Updated: Sunday 1 October 2017 at 22:39.29</i></p></div>
+	<p>Every day, you've got to get to work by walking up the sidewalk. Sure, it's some bullshit, not having a car and having to deal with rain, snow, orcs, and giant bees.... wait. Orcs? Giant bees? You're just trying to get to work here! (Incomplete/Testing)</p>
 	<h1><a href="play.html">You can play it in your browser.</a></h1>
 	<p>(<a href="fullscreen.html">if you're on a phone/tablet/etc try this link.</a>)</p>
-	<p><a href="Wake Up.z8">Download as a z8 file</a></p>
-	<p><a href="Wake Up.ulx">Download as a ULX file</a></p>
-	<p><a href="Wake Up.gblorb">Download as a gblorb file</a></p>
 </div>
 
 <div class="playinfo">
-	<p>Wake Up was created with <a href="http://inform7.com/">Inform</a>.<br />
-	IFID: 9ED1934E-C661-11E8-91AE-64006A3B60E7.</p>
+	<p>Getting To Work And Other Bullshit was created with <a href="http://inform7.com/">Inform</a>.<br />
+	IFID: 5AEB4C4C-2AF4-11E7-9800-88AE1DA6CC50.</p>
 </div> 
     <div id="disqus_thread"></div>
     <script type="text/javascript">
